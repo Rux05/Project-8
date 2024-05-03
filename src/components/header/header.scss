@@ -1,0 +1,22 @@
+.navlink-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    // align-items: center;
+}
+
+.navlink-text {
+    margin: 20px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.navlink-text:hover {
+    text-decoration: underline; 
+}
+
+.logo {
+    width: 12%;
+}

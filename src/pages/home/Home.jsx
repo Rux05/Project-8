@@ -1,11 +1,16 @@
+import React from "react";
 import Header from "../../components/header/Header";
-import "./home.scss"
+import Body from "../../components/body/Body";
+import Footer from "../../components/footer/Footer";
+import "./home.scss";
 
 export default function Home() {
-    return (
-        <div className="home-container">
-            <Header/>
-            <p>Home</p>
-        </div>
-    )
+  return (
+    <div className="home-container">
+      <Header />
+      <Body />
+      <Footer />
+      {/* <p>Home</p> */}
+    </div>
+  );
 }
