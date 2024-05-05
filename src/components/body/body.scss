@@ -1,0 +1,56 @@
+.body-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+
+.banner {
+    // position: relative;
+    width: 90%;
+    // max-width: 80%;
+    // margin-left: 50px; 
+    // left: 50%;
+    // margin-right: 50px; 
+    height: 25%;
+    object-fit: cover;
+    object-position: center;
+    // background-color: rgba(0, 0, 0, 0.5);  /* ???????? */
+    filter: brightness(50%);
+    border-radius: 10px; 
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 7%;
+    left: 35%;
+}
+
+.property-image-container {
+    border: 2px solid pink; /* Adăugăm un chenar roz de 2px în jurul imaginii */
+    padding: 10px; /* Adăugăm puțin spațiu între chenar și imagine */
+    border-radius: 5px; /* Rotunjim colțurile chenarului */
+    display: inline-block; /* Asigurăm că chenarul se mulează pe dimensiunile imaginii */
+}
+
+.property-image-container img {
+    max-width: 100%;
+    height: auto; /* Asigurăm că imaginea nu depășește chenarul */
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trei coloane cu aceeași lățime */
+    gap: 20px; /* Spațiu între elementele gridului */
+    list-style: none; /* Eliminăm stilurile implicite ale listei */
+    padding: 0; /* Eliminăm spațiul de pe marginea listei */
+}
+  
+.property-grid li {
+    text-align: center; /* Centrăm conținutul */
+}

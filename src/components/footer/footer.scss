@@ -1,8 +1,15 @@
 .footer-container {
-    background-color: aqua;
-    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
     text-align: center;
     p {
-        background-color: black;
+        color: white;
     }
+}
+
+.fa-copyright {
+    color: white;
 }
