@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     object-fit: cover;
-    height: 100vh;
+    // height: 100vh;
     align-items: center;
     position: relative;
 }
@@ -11,12 +11,12 @@
 
 .banner {
     // position: relative;
-    width: 90%;
+    width: 95%;
     // max-width: 80%;
     // margin-left: 50px; 
     // left: 50%;
     // margin-right: 50px; 
-    height: 25%;
+    height: 200px;
     object-fit: cover;
     object-position: center;
     // background-color: rgba(0, 0, 0, 0.5);  /* ???????? */
@@ -27,28 +27,36 @@
 h1 {
     color: white;
     position: absolute;
-    top: 7%;
-    left: 35%;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.property-image-container {
-    border: 2px solid pink; /* Adăugăm un chenar roz de 2px în jurul imaginii */
-    padding: 10px; /* Adăugăm puțin spațiu între chenar și imagine */
-    border-radius: 5px; /* Rotunjim colțurile chenarului */
-    display: inline-block; /* Asigurăm că chenarul se mulează pe dimensiunile imaginii */
+.card {
+    border: 2px solid transparent; 
+    padding: 10px;
+    border-radius: 5px; 
+    display: inline-block; 
+    width: 100%;
+    background: rgb(251,72,103);
 }
 
-.property-image-container img {
+.card img {
     max-width: 100%;
     height: auto; /* Asigurăm că imaginea nu depășește chenarul */
 }
 
 .property-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Trei coloane cu aceeași lățime */
-    gap: 20px; /* Spațiu între elementele gridului */
-    list-style: none; /* Eliminăm stilurile implicite ale listei */
-    padding: 0; /* Eliminăm spațiul de pe marginea listei */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    list-style: none; 
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
   
 .property-grid li {

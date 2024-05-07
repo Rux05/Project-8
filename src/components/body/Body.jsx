@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./body.scss";
+import Banner from "../banner/Banner";
+import ImgHomeBanner from "./../../assets/banner/image-source1.png";
+import { Link } from "react-router-dom";
 
 export default function Body() {
   const [properties, setProperties] = useState([]);
@@ -13,15 +16,14 @@ export default function Body() {
 
   return (
     <div className="body-container">
-      <img src="./image-source1.png" alt="Image source 1" className="banner" />
-      <h1>Chez vous, partout et ailleurs</h1>
+      <Banner img={ImgHomeBanner} title="Chez vous, partout et ailleurs" />
       <ul className="property-grid">
         {properties.map((property) => (
           <li key={property.id}>
-            <h2>{property.name}</h2>
-            <div className="property-image-container">
-              <img src={property.cover} alt={property.name} />
-            </div>
+            <Link to={`/logement/${property.id}`} className="card">
+              <img src={property.cover} alt={property.title} />
+              <p>{property.title}</p>
+            </Link>
           </li>
         ))}
       </ul>

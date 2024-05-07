@@ -1,26 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./header.scss";
-
-// export default function Header() {
-//   return (
-//     <div className="navlink-container">
-//       <img src="./logo.png" className="logo" alt="Logo"></img>
-//       <div className="navlink-text">
-//       <NavLink to="/">
-//         Accueil</div>
-//       </NavLink>
-//       <NavLink to="/a-propos">
-//         A Propos
-//       </NavLink>
-//       </div>
-//     </div>
-//   );
-// }
+import Logo from "../logo/Logo";
+import ImgLogo from "./../../assets/logo/LOGO.png";
 
 export default function Header() {
   return (
     <div className="header-container">
-      <img src="./logo.png" className="logo" alt="Logo" />
+      <Logo img={ImgLogo} />
+      {/* <img src="./LOGO.png" className="logo" alt="Logo" /> */}
       <div className="navlink-container">
         <NavLink to="/" className="navlink-text">
           Accueil
