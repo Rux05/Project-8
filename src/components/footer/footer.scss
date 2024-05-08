@@ -1,11 +1,17 @@
 .footer-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: black;
-    padding: 20px;
+    // padding: 20px;
     text-align: center;
     p {
         color: white;
     }
+}
+
+.footer-text {
+
 }
 
 .fa-copyright {

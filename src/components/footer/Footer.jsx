@@ -1,15 +1,18 @@
 import React from "react";
+import Logo from "../logo/Logo";
+import ImgLogo from "./../../assets/logo/LOGO2.png";
 import "./footer.scss";
 
 export default function Footer() {
   return (
     <div className="footer-container">
-      {/* <Footer/> */}
-      <img src="./LOGO2.png" className="logo2" alt="Logo2" />
-      <p>
-        <i className="fa-regular fa-copyright"></i>
-        2020 Kasa. All rights reserved
-      </p>
+      <Logo img={ImgLogo} />
+      <div className="footer-text">
+        <p>
+          <i className="fa-regular fa-copyright"></i>
+          2020 Kasa. All rights reserved
+        </p>
+      </div>
     </div>
   );
 }
