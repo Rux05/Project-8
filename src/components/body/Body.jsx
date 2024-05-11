@@ -22,7 +22,7 @@ export default function Body() {
           <li key={property.id}>
             <Link to={`/logement/${property.id}`} className="card">
               <img src={property.cover} alt={property.title} />
-              <p>{property.title}</p>
+              <p className="property-title">{property.title}</p>
             </Link>
           </li>
         ))}

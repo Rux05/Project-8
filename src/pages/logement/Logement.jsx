@@ -7,15 +7,22 @@ import "./logement.scss";
 export default function Logement() {
   const { id } = useParams();
   console.log(id);
-  // const [id, setProperties] = useState([]);
+  const [property, setProperty] = useState([]);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:8080/api/properties")
-  //     .then((response) => response.json())
-  //     .then((data) => setProperties(data))
-  //     .catch((error) => console.error("Error fetching data:", error));
-  // }, []);
-  // return (
-  //   <Header />;
-  // );
+  useEffect(() => {
+    fetch("http://localhost:8080/api/properties/${id}")
+      .then((response) => response.json())
+      .then((data) => setProperty(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, [id]);
+  return (
+    <>
+      <Header />
+      <div className="logement-container">
+        <h2>{property.title}</h2>
+        <p>{property.description}</p>
+        {/* Alte detalii despre proprietate */}
+      </div>
+    </>
+  );
 }

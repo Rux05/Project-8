@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./header.scss";
 import Logo from "../logo/Logo";
-import ImgLogo from "./../../assets/logo/LOGO.png";
+import ImgLogoHeader from "./../../assets/logo/LOGO.png";
 
 export default function Header() {
+  console.log(ImgLogoHeader);
   return (
     <div className="header-container">
-      <Logo img={ImgLogo} />
-      {/* <img src="./LOGO.png" className="logo" alt="Logo" /> */}
+      <Logo img={ImgLogoHeader} />
       <div className="navlink-container">
         <NavLink to="/" className="navlink-text">
           Accueil
