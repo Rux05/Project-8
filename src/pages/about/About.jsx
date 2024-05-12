@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Banner from "../../components/banner/Banner";
 import ImgAboutBanner from "./../../assets/banner/image-source2.png";
 import "./about.scss";
+// import "./../../components/header/header.scss";
 // import "./header.scss";
 
 export default function About() {
@@ -13,10 +14,22 @@ export default function About() {
       <div className="banner-and-list">
         <Banner img={ImgAboutBanner} />
         <ul className="about-list">
-          <li className="list-item">Fiabilité</li>
-          <li className="list-item">Respect</li>
-          <li className="list-item">Service</li>
-          <li className="list-item">Sécurité</li>
+          <div className="list-item">
+            <li>Fiabilité</li>
+            <i className="fa-solid fa-chevron-up"></i>
+          </div>
+          <div className="list-item">
+            <li>Respect</li>
+            <i className="fa-solid fa-chevron-up"></i>
+          </div>
+          <div className="list-item">
+            <li>Service</li>
+            <i className="fa-solid fa-chevron-up"></i>
+          </div>
+          <div className="list-item">
+            <li>Sécurité</li>
+            <i className="fa-solid fa-chevron-up"></i>
+          </div>
         </ul>
       </div>
       <Footer />

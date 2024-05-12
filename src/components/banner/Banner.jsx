@@ -1,3 +1,6 @@
+import React from "react";
+import "./banner.scss";
+
 export default function Banner({ img, title }) {
   return (
     <>

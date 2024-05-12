@@ -1,10 +1,14 @@
 .about-container {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 100%;
-    display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    object-fit: cover;
+    align-items: center;
+    position: relative;
 }
+
 
 .banner2 {
     // position: relative;
@@ -19,15 +23,34 @@
     margin-right: 30px;
 }
 
+.banner-and-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    position: relative;
+}
+
+.fa-chevron-up {
+    color: white;
+}
+
 .about-list {
     display: flex;
     flex-direction: column;
     list-style: none;
-    align-items: center;
-    background:  rgb(251,72,103);
+    // align-items: center;
+    width: 80%;
 }
 
 .list-item {
+    display: flex;
+    background:  rgb(251,72,103);
+    justify-content: space-between;
     border-radius: 2px;
     color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
 }

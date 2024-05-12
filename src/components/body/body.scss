@@ -9,20 +9,7 @@
 }
 
 
-.banner {
-    // position: relative;
-    width: 95%;
-    // max-width: 80%;
-    // margin-left: 50px; 
-    // left: 50%;
-    // margin-right: 50px; 
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
-    // background-color: rgba(0, 0, 0, 0.5);  /* ???????? */
-    filter: brightness(50%);
-    border-radius: 10px; 
-}
+
 
 h1 {
     color: white;
@@ -43,10 +30,18 @@ h1 {
     // background: rgb(251,72,103);
 }
 
+// .gradient {
+//     position: absolute;
+//     background: rgb(0,0,0);
+//     background: linear-gradient(180deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgba(2,0,36,1) 100%);
+
+// }
+
 .card img {
     width: 100%;
     max-width: 100%;
-    height: 217px;
+    // height: 217px;
+    height: 435px;
     background: linear-gradient(90deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgba(2,0,36,1) 100%);
     // background: rgb(0,0,0);
     // background: linear-gradient(90deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgba(2,0,36,1) 100%);
