@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../components/header/Header";
-import Banner from "../../components/banner/Banner";
-import ImgLogementBanner from "./../../assets/banner/image-source1.png";
 import "./logement.scss";
 import Footer from "../../components/footer/Footer";
+import ImageSlider from "../../components/image slider/ImageSlider";
 
 export default function Logement() {
   const { id } = useParams();
   console.log(id);
+  const slides = [];
   const [property, setProperty] = useState([]);
 
   useEffect(() => {
@@ -21,11 +21,11 @@ export default function Logement() {
     <>
       <div className="logement-container">
         <Header />
-        <div className="logement-banner">
-          <Banner img={ImgLogementBanner} />
-          <h2>{property.title}</h2>
-          <p>{property.description}</p>
+        <div className="slides-container">
+          <ImageSlider slides={slides} />
         </div>
+        <h2>{property.title}</h2>
+        <p>{property.description}</p>
         <Footer />
       </div>
     </>

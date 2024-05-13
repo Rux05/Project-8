@@ -1,0 +1,35 @@
+.slider-styles {
+    height: 100%;
+    position: relative;
+}
+
+.fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 45px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 45px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slide-styles {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+    background-position: center;
+    background-size: cover;
+    // background-image: `url(${slides[currentIndex].url})`;
+}
