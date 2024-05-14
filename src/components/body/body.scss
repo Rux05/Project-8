@@ -21,21 +21,25 @@ h1 {
 
 .card {
     border: 2px solid transparent; 
-    padding: 10px;
-    border-radius: 5px; 
+    // padding: 10px;
+    border-radius: 15px; 
     // display: inline-block; 
     position: relative;
     overflow: hidden;
+    display: block;
     // width: 100%;
     // background: rgb(251,72,103);
 }
 
-// .gradient {
-//     position: absolute;
-//     background: rgb(0,0,0);
-//     background: linear-gradient(180deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgba(2,0,36,1) 100%);
-
-// }
+.gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgb(0, 0, 7) 100%);
+}
 
 .card img {
     width: 100%;
@@ -48,8 +52,8 @@ h1 {
     background-size: cover;
     object-fit: cover;
     // display: block;
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
 }
 
 // .card::before {

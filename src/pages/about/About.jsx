@@ -4,6 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Banner from "../../components/banner/Banner";
 import ImgAboutBanner from "./../../assets/banner/image-source2.png";
 import "./about.scss";
+import Accordion from "../../components/accordion/Accordion";
 // import "./../../components/header/header.scss";
 // import "./header.scss";
 
@@ -13,7 +14,16 @@ export default function About() {
       <Header />
       <div className="banner-and-list">
         <Banner img={ImgAboutBanner} />
-        <ul className="about-list">
+        <div>
+          <Accordion
+            title="Fiabilité"
+            content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+          laborum cupiditate possimus labore, hic temporibus velit dicta earum
+          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+          voluptatem."
+          />
+        </div>
+        {/* <ul className="about-list">
           <div className="list-item">
             <li>Fiabilité</li>
             <i className="fa-solid fa-chevron-up"></i>
@@ -30,7 +40,7 @@ export default function About() {
             <li>Sécurité</li>
             <i className="fa-solid fa-chevron-up"></i>
           </div>
-        </ul>
+        </ul> */}
       </div>
       <Footer />
     </div>

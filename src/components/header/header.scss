@@ -20,7 +20,7 @@
     text-decoration: none;
 }
 
-.navlink-text:hover {
+.navlink-text:hover, .navlink-text.active {
     text-decoration: underline; 
 }
 

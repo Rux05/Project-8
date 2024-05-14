@@ -21,9 +21,8 @@ export default function Body() {
         {properties.map((property) => (
           <li key={property.id}>
             <Link to={`/logement/${property.id}`} className="card">
-              {/* <div className="gradient"> */}
               <img src={property.cover} alt={property.title} />
-              {/* </div> */}
+              <div className="gradient"></div>
               <p className="property-title">{property.title}</p>
             </Link>
           </li>
