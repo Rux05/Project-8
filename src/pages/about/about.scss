@@ -32,17 +32,23 @@
     position: relative;
 }
 
-.fa-chevron-up {
-    color: white;
-}
-
-.about-list {
+.accordion {
     display: flex;
     flex-direction: column;
-    list-style: none;
-    // align-items: center;
-    width: 80%;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    position: relative;
+    margin: 20px;
 }
+
+// .about-list {
+//     display: flex;
+//     flex-direction: column;
+//     list-style: none;
+//     // align-items: center;
+//     width: 80%;
+// }
 
 .list-item {
     display: flex;

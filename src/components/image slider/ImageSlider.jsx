@@ -24,7 +24,7 @@ export default function ImageSlider({ slides }) {
 
   return (
     <div className="slider-styles">
-      <img src={slides[currentIndex]} alt="" />
+      <img src={slides[currentIndex]} alt="slider-images" />
       <i className="fa-solid fa-chevron-left" onClick={goToPrevious}></i>
       <i className="fa-solid fa-chevron-right" onClick={goToNext}></i>
       <div className="indicators">{currentIndex + 1 + "/" + slides.length}</div>
