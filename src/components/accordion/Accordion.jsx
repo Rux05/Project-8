@@ -23,7 +23,11 @@ export default function Accordion({ title, content }) {
             />
           </div>
         </div>
-        {open && <div className="accordion-content">{content}</div>}
+        {open && (
+          <div className="accordion-content">
+            <p>{content}</p>
+          </div>
+        )}
       </div>
       {/* </div> */}
     </React.Fragment>

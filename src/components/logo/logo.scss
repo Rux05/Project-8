@@ -2,6 +2,11 @@
     margin: 20px 50px 25px 40px;
 }
 
-// img.logo {
-//     width: 100px;
-// }
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .logo {
+        width: 145px;
+        height: 47px;
+        margin: 20px;
+    }
+}

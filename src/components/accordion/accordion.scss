@@ -19,9 +19,11 @@
     display: flex;
     background:  rgba(255, 96, 96, 1);
     justify-content: space-between;
-    border-radius: 2px;
+    border-radius: 10px;
     color: white;
-    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
     padding: 10px;
     margin-bottom: 20px;
     width: 100%;
@@ -43,5 +45,26 @@
     
     &.open {
       transform: rotate(180deg);
+    }
+
+    
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .accordion-title-content {
+        width: 95%;
+    }
+
+    .accordion {
+        margin-bottom: 10px;
+    }
+
+    .accordion-title {
+        font-size: 20px;
     }
 }

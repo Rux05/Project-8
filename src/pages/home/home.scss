@@ -9,3 +9,67 @@
     //     background-color: red;
     // }
 }
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    body {
+        margin: 0px;
+    }
+
+    .navlink-container {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .navlink-text {
+        text-transform: uppercase; 
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 600;
+        top: 35px;
+        left: 30%;
+        margin: 15px 50px 10px 20px;
+    }
+
+    .banner {
+        height: 110px;
+    }
+
+    .property-grid {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: transparent;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .footer-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+        // justify-content: space-around;
+    }
+
+    .footer-text {
+        font-size: 10px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    // .accordion-title-content {
+    //     width: 95%;
+    // }
+}
+

@@ -32,24 +32,6 @@ export default function About() {
             content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
           />
         </div>
-        {/* <ul className="about-list">
-          <div className="list-item">
-            <li>Fiabilité</li>
-            <i className="fa-solid fa-chevron-up"></i>
-          </div>
-          <div className="list-item">
-            <li>Respect</li>
-            <i className="fa-solid fa-chevron-up"></i>
-          </div>
-          <div className="list-item">
-            <li>Service</li>
-            <i className="fa-solid fa-chevron-up"></i>
-          </div>
-          <div className="list-item">
-            <li>Sécurité</li>
-            <i className="fa-solid fa-chevron-up"></i>
-          </div>
-        </ul> */}
       </div>
       <Footer />
     </div>

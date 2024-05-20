@@ -1,4 +1,6 @@
 import { useState } from "react";
+import sliderArrowLeft from "./../../assets/slider/arrow-left.png";
+import sliderArrowRight from "./../../assets/slider/arrow-right.png";
 import "./imageslider.scss";
 
 export default function ImageSlider({ slides }) {
@@ -23,10 +25,26 @@ export default function ImageSlider({ slides }) {
   };
 
   return (
-    <div className="slider-styles">
-      <img src={slides[currentIndex]} alt="slider-images" />
-      <i className="fa-solid fa-chevron-left" onClick={goToPrevious}></i>
-      <i className="fa-solid fa-chevron-right" onClick={goToNext}></i>
+    <div className="slider">
+      <img
+        src={slides[currentIndex]}
+        alt="slider-images"
+        className="slider-images"
+      />
+      {/* <i className="fa-solid fa-chevron-left" onClick={goToPrevious}></i>
+      <i className="fa-solid fa-chevron-right" onClick={goToNext}></i> */}
+      <img
+        src={sliderArrowLeft}
+        alt="slider arrow left"
+        className="arrow-left"
+        onClick={goToPrevious}
+      />
+      <img
+        src={sliderArrowRight}
+        alt="slider arrow right"
+        className="arrow-right"
+        onClick={goToNext}
+      />
       <div className="indicators">{currentIndex + 1 + "/" + slides.length}</div>
     </div>
   );

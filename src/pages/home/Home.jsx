@@ -10,7 +10,6 @@ export default function Home() {
       <Header />
       <Body />
       <Footer />
-      {/* <p>Home</p> */}
     </div>
   );
 }
