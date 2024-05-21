@@ -1,13 +1,30 @@
 .banner {
-    // position: relative;
-    width: 95%;
-    // margin-left: 10px; 
-    // left: 50%;
-    // margin-right: 50px; 
+    width: 95%; 
     height: 200px;
     object-fit: cover;
     object-position: center;
     // background-color: rgba(0, 0, 0, 0.5);  /* ???????? */
     filter: brightness(50%);
     border-radius: 20px; 
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+        font-weight: 600;
+        top: 35px;
+        left: 30%;
+        margin: 15px 50px 10px 20px;
+    }
+
+    .banner {
+        height: 110px;
+        // width: 100%;
+        // padding-right: 20px;
+    }
 }

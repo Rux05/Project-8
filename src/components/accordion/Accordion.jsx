@@ -9,12 +9,10 @@ export default function Accordion({ title, content }) {
   };
   return (
     <React.Fragment>
-      {/* <div className="accordion"> */}
       <div className="accordion-title-content">
         <div className="accordion-title">
           <div>{title}</div>
           <div>
-            {/* <i className="fa-solid fa-chevron-up"></i> */}
             <img
               src={accordionArrow}
               alt="Accordion arrow"
@@ -29,7 +27,6 @@ export default function Accordion({ title, content }) {
           </div>
         )}
       </div>
-      {/* </div> */}
     </React.Fragment>
   );
 }

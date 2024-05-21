@@ -4,6 +4,8 @@ import Header from "../../components/header/Header";
 import "./logement.scss";
 import Footer from "../../components/footer/Footer";
 import ImageSlider from "../../components/image slider/ImageSlider";
+import Accordion from "../../components/accordion/Accordion";
+// import Rating from "../../components/rating/Rating";
 // import { sliderArrowLeft } from "./../../assets/slider/arrow-left.png";
 // import { sliderArrowRight } from "./../../assets/slider/arrow-right.png";
 
@@ -60,10 +62,18 @@ export default function Logement() {
             <div className="left-content">
               <h2>{property.title}</h2>
               <p>{property.location}</p>
+              <p>{property.tags}</p>
             </div>
-            <div className="right-content"></div>
+            <div className="right-content">
+              <p>{property.host.name}</p>
+              {/* <p>{property.host.picture}</p> */}
+              {/* <Rating rate={property.rating} /> */}
+            </div>
           </div>
-          <div className="container-collapse"></div>
+          <div className="container-collapse">
+            <Accordion title="Description" content={property.description} />
+            <Accordion title="Équipements" content={property.equipment} />
+          </div>
         </div>
         <Footer />
       </div>

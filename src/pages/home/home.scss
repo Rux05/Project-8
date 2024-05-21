@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .home-container {
     background-color: white;
     width: 100%;
@@ -19,57 +25,5 @@
     body {
         margin: 0px;
     }
-
-    .navlink-container {
-        padding: 10px;
-        align-items: center;
-    }
-
-    .navlink-text {
-        text-transform: uppercase; 
-        margin: 10px;
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 25px;
-        font-weight: 600;
-        top: 35px;
-        left: 30%;
-        margin: 15px 50px 10px 20px;
-    }
-
-    .banner {
-        height: 110px;
-    }
-
-    .property-grid {
-        grid-template-columns: repeat(1, 1fr);
-        background-color: transparent;
-        margin: 0;
-        padding: 15px;
-    }
-
-    .card img {
-        height: 250px;
-    }
-
-    .footer-elements {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 30px;
-        // justify-content: space-around;
-    }
-
-    .footer-text {
-        font-size: 10px;
-        margin-left: 120px;
-        margin-right: 120px;
-    }
-
-    // .accordion-title-content {
-    //     width: 95%;
-    // }
 }
 
