@@ -1,0 +1,15 @@
+.tags-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tag-item {
+    color: white;
+    padding: 5px 40px 5px 40px;
+    background: rgb(255, 96, 96);
+    border-radius: 20px;
+    margin-right: 10px;
+  }

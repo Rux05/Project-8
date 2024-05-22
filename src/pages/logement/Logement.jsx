@@ -5,7 +5,8 @@ import "./logement.scss";
 import Footer from "../../components/footer/Footer";
 import ImageSlider from "../../components/image slider/ImageSlider";
 import Accordion from "../../components/accordion/Accordion";
-// import Rating from "../../components/rating/Rating";
+import Rating from "../../components/rating/Rating";
+import Tags from "../../components/tags/Tags";
 // import { sliderArrowLeft } from "./../../assets/slider/arrow-left.png";
 // import { sliderArrowRight } from "./../../assets/slider/arrow-right.png";
 
@@ -56,23 +57,26 @@ export default function Logement() {
         <Header />
         <div className="slider-container">
           <ImageSlider slides={property.pictures} />
-          {/* <ImageSlider img={sliderArrowLeft} />
-          <ImageSlider img={sliderArrowRight} /> */}
           <div className="container">
             <div className="left-content">
               <h2>{property.title}</h2>
               <p>{property.location}</p>
-              <p>{property.tags}</p>
+              <Tags tags={property.tags} />
             </div>
             <div className="right-content">
               <p>{property.host.name}</p>
-              {/* <p>{property.host.picture}</p> */}
-              {/* <Rating rate={property.rating} /> */}
+              <img
+                src={property.host.picture}
+                alt="Host picture"
+                className="host-picture"
+              />
+              <Rating rate={property.rating} />
             </div>
           </div>
           <div className="container-collapse">
             <Accordion title="Description" content={property.description} />
-            <Accordion title="Équipements" content={property.equipment} />
+            <div className="description-equipments-separator"></div>
+            <Accordion title="Équipements" content={property.equipments} />
           </div>
         </div>
         <Footer />

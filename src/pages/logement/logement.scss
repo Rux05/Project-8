@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: white;
     width: 100%;
+    min-height: 100vh;
     justify-content: space-between;
     object-fit: cover;
     align-items: center;
@@ -16,6 +17,7 @@
     width: 100%;
     // height: 100px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logement-banner {
@@ -25,11 +27,35 @@
     align-items: center;
 }
 
-// .banner-and-list {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     object-fit: cover;
-//     
-//     position: relative;
-// }
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    // padding: 0 20px; 
+}
+
+.container-collapse {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+}
+
+.host-picture {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.description-equipments-separator {
+    margin: 55px; 
+  }
+
+  .left-content h2 {
+    color:  rgba(255, 96, 96, 1);
+    font-weight: 500;
+  }
+
+  .left-content p {
+    font-weight: 600;
+  }

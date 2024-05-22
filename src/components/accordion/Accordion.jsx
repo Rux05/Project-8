@@ -23,7 +23,17 @@ export default function Accordion({ title, content }) {
         </div>
         {open && (
           <div className="accordion-content">
-            <p>{content}</p>
+            {Array.isArray(content) ? (
+              <ul className="accordion-content-list">
+                {content.map((item, index) => (
+                  <li key={index} className="accordion-content-item">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>{content}</p>
+            )}
           </div>
         )}
       </div>

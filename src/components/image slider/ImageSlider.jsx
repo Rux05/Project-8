@@ -45,7 +45,9 @@ export default function ImageSlider({ slides }) {
         className="arrow-right"
         onClick={goToNext}
       />
-      <div className="indicators">{currentIndex + 1 + "/" + slides.length}</div>
+      <div className="indicators">
+        <p>{currentIndex + 1 + "/" + slides.length}</p>
+      </div>
     </div>
   );
 }
