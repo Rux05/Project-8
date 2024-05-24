@@ -1,12 +1,13 @@
 .star-image {
-    width: 36px; 
-    height: 36px; 
-  }
+  width: 36px; 
+  height: 36px; 
+}
+
 
   /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-    .star-image {
-        width: 18px; 
-        height: 19px; 
-      }
+  .star-image {
+      width: 18px; 
+      height: 19px; 
+    }
 }

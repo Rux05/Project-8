@@ -7,7 +7,7 @@ import errorImage from "./../../assets/error/404.png";
 
 export default function Page404() {
   return (
-    <div>
+    <div className="error-page-container">
       <Header />
       <div className="error-image-title">
         <img src={errorImage} alt="Page 404" className="error-image" />

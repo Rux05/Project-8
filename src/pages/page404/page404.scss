@@ -1,6 +1,17 @@
+.error-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.error-image {
+    width: 600px;
+}
+
 .error-image-title {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .error-image-title h2 {

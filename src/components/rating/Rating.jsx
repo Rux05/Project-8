@@ -8,7 +8,7 @@ export default function Rating({ rate }) {
     arrayStars.push(i <= rate ? redStar : greyStar);
   }
   return (
-    <div>
+    <div className="rating-container">
       {arrayStars.map((star, index) => {
         return (
           <img

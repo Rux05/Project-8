@@ -4,6 +4,7 @@
     list-style: none;
     // align-items: center;
     width: 80%;
+    margin-bottom: 10px;
 }
 
 
@@ -28,9 +29,10 @@
     justify-content: space-between;
     border-radius: 2px;
     padding: 10px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     width: 100%;
     list-style: none;
+    background-color: #F2F2F2;
 }
 
 .accordion-content-list {
@@ -45,12 +47,11 @@
 
 .accordion-arrow {
     transition: transform 0.2s;
+    padding-bottom: 5px;
     
     &.open {
       transform: rotate(180deg);
-    }
-
-    
+    }   
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

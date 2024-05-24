@@ -9,13 +9,7 @@
     position: relative;
 }
 
-h1 {
-    color: white;
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 .card {
     border: 2px solid transparent; 
@@ -70,7 +64,7 @@ h1 {
 .property-title {
     position: absolute;
     left: 10px;
-    bottom: 20px;
+    bottom: 5px;
     color: white;
     font-size: 15px;
     font-weight: 700;
@@ -109,7 +103,7 @@ h1 {
         grid-template-columns: repeat(1, 1fr);
         background-color: transparent;
         margin: 0;
-        padding: 15px 15px 0 0;
+        padding: 15px 0 0 0;
     }
 
     .property-title {

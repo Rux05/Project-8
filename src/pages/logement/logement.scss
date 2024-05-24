@@ -42,20 +42,54 @@
     padding: 0;
 }
 
+.description-equipments-separator {
+    margin: 55px; 
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.left-content h2 {
+    color:  rgba(255, 96, 96, 1);
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.left-content p {
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.right-content {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+.host-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+  
+.host-name {
+    margin-right: 10px;
+    max-width: 100px;
+    padding: 10px;
+    text-align: right;
+    color: rgb(255, 96, 96);
+    font-weight: 500;
+}
+
 .host-picture {
     border-radius: 50%;
     object-fit: cover;
+    width: 90px;
 }
-
-.description-equipments-separator {
-    margin: 55px; 
-  }
-
-  .left-content h2 {
-    color:  rgba(255, 96, 96, 1);
-    font-weight: 500;
-  }
-
-  .left-content p {
-    font-weight: 600;
-  }

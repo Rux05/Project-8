@@ -64,12 +64,14 @@ export default function Logement() {
               <Tags tags={property.tags} />
             </div>
             <div className="right-content">
-              <p>{property.host.name}</p>
-              <img
-                src={property.host.picture}
-                alt="Host picture"
-                className="host-picture"
-              />
+              <div className="host-details">
+                <p className="host-name">{property.host.name}</p>
+                <img
+                  src={property.host.picture}
+                  alt="Host picture"
+                  className="host-picture"
+                />
+              </div>
               <Rating rate={property.rating} />
             </div>
           </div>
