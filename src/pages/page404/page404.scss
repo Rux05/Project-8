@@ -2,25 +2,35 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100vh;
+    background-color: white;
 }
 
 .error-image {
-    width: 600px;
+    width: 500px;
 }
 
 .error-image-title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .error-image-title h2 {
     color: rgba(255, 96, 96, 1);
     font-weight: 500;
+    margin: 100px 0;
 }
 
 .retourner {
     font-weight: 500;
     font-size: 18px;
     color: black;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: none;
 }

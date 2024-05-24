@@ -13,7 +13,9 @@ export default function Page404() {
         <img src={errorImage} alt="Page 404" className="error-image" />
         <h2>Oups! La page que vous demandez n'existe pas.</h2>
         {/* <a href="" className="retourner">Retourner sur la page d’accueil</a> */}
-        <NavLink to="/error-404" className="retourner"></NavLink>
+        <NavLink to="/" className="retourner">
+          Retourner sur la page d’accueil
+        </NavLink>
       </div>
       <Footer />
     </div>
