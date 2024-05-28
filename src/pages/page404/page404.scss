@@ -7,7 +7,7 @@
 }
 
 .error-image {
-    width: 500px;
+    width: 595px;
 }
 
 .error-image-title {
@@ -22,15 +22,35 @@
     color: rgba(255, 96, 96, 1);
     font-weight: 500;
     margin: 100px 0;
+    font-size: 36px;
 }
 
 .retourner {
     font-weight: 500;
     font-size: 18px;
     color: black;
-    font-size: 15px;
     text-decoration: underline;
     text-decoration-color: grey;
     text-decoration-thickness: 2px;
     text-decoration-skip-ink: none;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .error-image {
+        width: 200px;
+    }
+
+    .error-image-title h2 {
+        font-size: 18px;
+    }
+
+    .error-image-title h2 {
+        margin: 100px 85px;
+    }
+
+    .retourner {
+        font-size: 14px;
+    }
+
 }
