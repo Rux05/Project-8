@@ -5,14 +5,6 @@ import "./imageslider.scss";
 
 export default function ImageSlider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  //   useEffect(() => {
-  //     fetch("http://localhost:8080/api/properties/${id}")
-  //       .then((response) => response.json())
-  //       .then((data) => setProperty(data))
-  //       .catch((error) => console.error("Error fetching data:", error));
-  //   }, [id]);
-
   const goToPrevious = function () {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -31,8 +23,6 @@ export default function ImageSlider({ slides }) {
         alt="slider-images"
         className="slider-images"
       />
-      {/* <i className="fa-solid fa-chevron-left" onClick={goToPrevious}></i>
-      <i className="fa-solid fa-chevron-right" onClick={goToNext}></i> */}
       <img
         src={sliderArrowLeft}
         alt="slider arrow left"

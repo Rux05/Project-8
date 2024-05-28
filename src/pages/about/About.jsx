@@ -5,8 +5,6 @@ import Banner from "../../components/banner/Banner";
 import ImgAboutBanner from "./../../assets/banner/image-source2.png";
 import "./about.scss";
 import Accordion from "../../components/accordion/Accordion";
-// import "./../../components/header/header.scss";
-// import "./header.scss";
 
 export default function About() {
   return (

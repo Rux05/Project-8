@@ -13,14 +13,10 @@
 
 .card {
     border: 2px solid transparent; 
-    // padding: 10px;
     border-radius: 15px; 
-    // display: inline-block; 
     position: relative;
     overflow: hidden;
     display: block;
-    // width: 100%;
-    // background: rgb(251,72,103);
 }
 
 .gradient {
@@ -36,30 +32,11 @@
 .card img {
     width: 100%;
     max-width: 100%;
-    // height: 217px;
     height: 435px;
     background: linear-gradient(90deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgba(2,0,36,1) 100%);
-    // background: rgb(0,0,0);
-    // background: linear-gradient(90deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgba(2,0,36,1) 100%);
     background-size: cover;
     object-fit: cover;
-    // display: block;
-    // position: relative;
-    // z-index: 1;
 }
-
-// .card::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 217px;
-//     background: rgb(0,0,0);
-//     background: linear-gradient(90deg, rgba(0,0,0,0.04383760340073528) 0%, rgba(0,0,0,0.2595238779105392) 71%, rgba(2,0,36,1) 100%);
-//     opacity: 0.7; /* Ajustează opacitatea gradientului după preferințe */
-//     pointer-events: none; /* Permiterea evenimentelor mouse-ului să treacă prin gradient */
-// }
 
 .property-title {
     position: absolute;
@@ -69,7 +46,6 @@
     font-size: 15px;
     font-weight: 700;
     padding: 10px 120px 10px 10px;
-    // white-space: pre-wrap;
     z-index: 2;
     width: 349px;
     text-align: left;
@@ -89,7 +65,7 @@
 }
   
 .property-grid li {
-    text-align: center; /* Centrăm conținutul */
+    text-align: center; 
 }
 
 
