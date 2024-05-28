@@ -12,11 +12,11 @@
     display: flex;
     background:  rgba(255, 96, 96, 1);
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: 5px;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     padding: 10px;
     // margin-bottom: 20px;
     align-items: center;
@@ -32,7 +32,7 @@
     // margin-bottom: 20px;
     width: 100%;
     list-style: none;
-    background-color: #F2F2F2;
+    background-color: rgba(246, 246, 246, 0.45);
 }
 
 .accordion-content-list {
@@ -46,11 +46,11 @@
   }
 
 .accordion-arrow {
-    transition: transform 0.2s;
-    padding-bottom: 5px;
+    transition: transform 0.3s;
+    padding: 5px;
     
     &.open {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
     }   
 }
 
@@ -61,18 +61,23 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
     .accordion-title-content {
-        width: 95%;
+        width: 100%;
         margin-top: 10px;
         // margin-bottom: 10px;
     }
 
-    // .accordion {
-    //     margin: 30px;
-    // }
-
     .accordion-title {
-        font-size: 18px;
+        font-size: 13px;
         font-weight: 600;
-        padding: 5px;
+        padding: 0 0 0 10px;
+    }
+
+    .accordion-arrow {
+        width: 25px;
+    }
+
+    .accordion-content {
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
     }
 }

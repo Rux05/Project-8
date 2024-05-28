@@ -3,7 +3,7 @@
     flex-direction: row;
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 10px;
   }
 
   .tag-item {
@@ -14,3 +14,15 @@
     border-radius: 20px;
     margin-right: 10px;
   }
+
+  /* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .tags-list {
+    margin: 0;
+  }
+  
+  .tag-item {
+    padding: 5px 20px 5px 20px;
+    font-size: 10px;
+  }
+}

@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    // height: 100px;
+    height: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -49,6 +49,7 @@
 .left-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -57,11 +58,13 @@
     color:  rgba(255, 96, 96, 1);
     font-weight: 500;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .left-content p {
     font-weight: 600;
     padding-left: 10px;
+    margin-top: 0;
 }
 
 .right-content {
@@ -92,4 +95,66 @@
     border-radius: 50%;
     object-fit: cover;
     width: 90px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .logement-container {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .right-content {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-content {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .left-content p {
+        margin-top: 0;
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    .left-content h2 {
+        margin-top: 10px;
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .container-collapse {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .description-equipments-separator {
+        margin: 0;
+    }
+
+    .host-picture {
+        width: 45px;
+    }
+
+    .host-details {
+        margin: 0;
+    }
+
+    .host-name {
+        font-size: 12px;
+        margin-right: 0;
+        padding: 10px 15px 10px 30px;
+    }
+    
+
 }

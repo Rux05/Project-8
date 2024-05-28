@@ -2,21 +2,25 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .navlink-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 20px;
-    // align-items: center;
+    padding: 35px;
+    gap: 15px;
+    align-items: center;
 }
 
 .navlink-text {
-    margin: 20px;
+    // margin: 20px;
+    font-size: 24px;
     padding: 5px;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -41,8 +45,9 @@
     
     .navlink-text {
         text-transform: uppercase; 
-        margin: 10px;
+        margin: 5px 0;
         font-size: 12px;
+        // gap: 0;
     }
 
 }
