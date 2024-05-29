@@ -23,21 +23,25 @@ export default function ImageSlider({ slides }) {
         alt="slider-images"
         className="slider-images"
       />
-      <img
-        src={sliderArrowLeft}
-        alt="slider arrow left"
-        className="arrow-left"
-        onClick={goToPrevious}
-      />
-      <img
-        src={sliderArrowRight}
-        alt="slider arrow right"
-        className="arrow-right"
-        onClick={goToNext}
-      />
-      <div className="indicators">
-        <p>{currentIndex + 1 + "/" + slides.length}</p>
-      </div>
+      {slides.length > 1 && (
+        <>
+          <img
+            src={sliderArrowLeft}
+            alt="slider arrow left"
+            className="arrow-left"
+            onClick={goToPrevious}
+          />
+          <img
+            src={sliderArrowRight}
+            alt="slider arrow right"
+            className="arrow-right"
+            onClick={goToNext}
+          />
+          <div className="indicators">
+            <p>{currentIndex + 1 + "/" + slides.length}</p>
+          </div>
+        </>
+      )}
     </div>
   );
 }
