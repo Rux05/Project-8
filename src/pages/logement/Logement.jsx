@@ -19,10 +19,6 @@ export default function Logement() {
 
   useEffect(() => {
     fetch(`http://localhost:8080/api/properties/${id}`)
-      // .then((response) => response.json())
-      // .then((data) => setProperty(data))
-      //     .catch((error) => console.error("Error fetching data:", error));
-      // }, [id]);
       .then((response) => {
         if (!response.ok) {
           navigate("/page-404");
